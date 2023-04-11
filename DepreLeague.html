@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <span>DEPRE LEAGUE CS-GO</span>
+      <button onclick="openModal()" id="new">Inscreva-se</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome do Time</th>
+            <th>Jogador 1</th>
+            <th>Jogador 2</th>
+            <th>Jogador 3</th>
+            <th>Jogador 4</th>
+            <th>Jogador 5</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-time">Nome do Time</label>
+          <input id="m-time" type="text" required />
+  
+          <label for="m-mjogador1">Jogador 1</label>
+          <input id="m-jogador1" type="text" required />
+  
+          <label for="m-jogador2">Jogador 2</label>
+          <input id="m-jogador2" type="text" required />
+
+          <label for="m-jogador3">Jogador 3</label>
+          <input id="m-jogador3" type="text" required />
+
+          <label for="m-jogador4">Jogador 4</label>
+          <input id="m-jogador4" type="text" required />
+
+          <label for="m-jogador5">Jogador 5</label>
+          <input id="m-jogador5" type="text" required />
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="js/DepreLeague.js"></script>
+</body>
+
+</html>
