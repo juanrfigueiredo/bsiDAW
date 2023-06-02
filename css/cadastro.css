@@ -1,0 +1,39 @@
+.darkmode {
+  background: linear-gradient(to bottom, #0d253f, #252525);
+  color: #ffffff;
+}
+
+.container {
+  margin: 1rem auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+.cadastrar {
+  width: 100%;
+}
+
+.cadastrar:hover {
+  background-color: #0d253f;
+}
+
+/* faça label ficar na linha acima */
+label {
+  display: block;
+}
+
+/* faça a senha e macaco ficar na mesma linha*/
+.senha,
+.macaco {
+  display: inline-block;
+}
+
+.senha {
+  width: 80%;
+}
+

@@ -5,76 +5,98 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="favicon" rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/cadastro.css">
   <title>Cadastro</title>
   <style>
-    .darkmode {
-      background-color: #000000;
-      color: #ffffff;
-    }
+
   </style>
 </head>
 
 <body class="darkmode">
   <form>
-    <form>
-      <div class="mb-3">
-        <label for="nome" class="form-label">Nome*</label>
-        <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome" autocomplete="off" required>
+    <div class="container">
+      <div class="input-label-combo">
+        <div class="vertical-container">
+          <label for="nome" class="form-label">Nome*</label>
+          <input type="text" class="form-control" placeholder="Nome" id="nome" name="nome" autocomplete="off"
+            maxlength="255" required>
+        </div>
+        <div class="input-label-combo" style="margin-top: 1rem;">
+          <div class="mb-3" id="genero">
+            <label for="pronomes" class="form-label">Pronome</label>
+            <select name="pronomes" id="pronomes">
+              <option value="">Prefiro não dizer</option>
+              <option value="ele">Ele</option>
+              <option value="ela">Ela</option>
+              <option value="elu">Elu</option>
+            </select>
+          </div>
+        </div>
       </div>
-      <div class="mb-3" id="genero">
-        <label for="pronomes" class="form-label">Pronome</label>
-        <select name="pronomes" id="pronomes">
-          <option value="">Prefiro não dizer</option>
-          <option value="ele">Ele</option>
-          <option value="ela">Ela</option>
-          <option value="elu">Elu</option>
-        </select>
+      <div class="input-label-combo">
+        <div class="mb-3">
+          <label for="profissional" class="form-label">É Profissional?</label>
+          <select name="profissional" id="profissional">
+            <option value="false">Não</option>
+            <option value="true">Sim</option>
+          </select>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="profissional" class="form-label">É Profissional?</label>
-        <select name="profissional" id="profissional">
-          <option value="false">Não</option>
-          <option value="true">Sim</option>
-        </select>
+      <div class="input-label-combo">
+        <div class="mb-3">
+          <label for="usuario" class="form-label">Usuário*</label>
+          <input type="text" class="form-control" placeholder="Usuário" id="usuario" autocomplete="off" name="usuario"
+            required>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="usuario" class="form-label">Usuário*</label>
-        <input type="text" class="form-control" placeholder="Usuário" id="usuario" autocomplete="off" name="usuario"
-          required>
+      <div class="input-label-combo">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email*</label>
+          <input type="email" class="form-control" placeholder="exemplo@exemplo.com" autocomplete="off" id="email"
+            name="email" required>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email*</label>
-        <input type="email" class="form-control" placeholder="exemplo@exemplo.com" autocomplete="off" id="email"
-          name="email" required>
+      <div class="input-label-combo">
+        <div class="mb-3">
+          <label for="senha" class="form-label">Senha*</label>
+          <input type="password" class="form-control senha" id="senha" placeholder="Senha" minlength="8" name="senha"
+            required>
+          <a class="macaco" onclick="mostrarSenha(this,'senha')">🙈</a>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="senha" class="form-label">Senha*</label>
-        <input type="password" class="form-control" id="senha" placeholder="Senha" minlength="8" name="senha" required>
-        <a onclick="mostrarSenha(this,'senha')">🙈</a>
+      <div class="input-label-combo">
+        <div class="mb-3">
+          <label for="repita_senha" class="form-label">Repita a Senha*</label>
+          <input type="password" class="form-control senha" id="repita_senha" placeholder="Repita a senha" minlength="8"
+            name="repita_senha" required>
+          <a class="macaco" onclick="mostrarSenha(this,'repita_senha')">🙈</a>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="repita_senha" class="form-label">Repita a Senha*</label>
-        <input type="password" class="form-control" id="repita_senha" placeholder="Repita a senha" minlength="8"
-          name="repita_senha" required>
-        <a onclick="mostrarSenha(this,'repita_senha')">🙈</a>
+      <div class="input-label-combo">
+        <div class="mb-3">
+          <label for="CPF" class="form-label">CPF</label>
+          <input type="text" class="form-control" id="CPF" name="CPF" maxlength="14" placeholder="000.000.000-00"
+            onkeyup="maskCpf(this)" onblur="maskCPF(this)">
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="CPF" class="form-label">CPF</label>
-        <input type="text" class="form-control" id="CPF" name="CPF" maxlength="14" placeholder="000.000.000-00"
-          onkeyup="maskCpf(this)" onblur="maskCPF(this)">
+      <div class="input-label-combo">
+        <div class="mb-3">
+          <label for="celular" class="form-label">Celular</label>
+          <input type="text" class="form-control" id="celular" name="celular" maxlength="15"
+            placeholder="(00) 00000-0000" onkeyup="maskCelular(this)" onblur="maskCelular(this)">
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="celular" class="form-label">Celular</label>
-        <input type="text" class="form-control" id="celular" name="celular" maxlength="15" placeholder="(00) 00000-0000"
-          onkeyup="maskCelular(this)" onblur="maskCelular(this)">
+      <div class="input-label-combo">
+        <div class="mb-3">
+          <label for="nascimento" class="form-label">Data de nascimento</label>
+          <input type="text" class="form-control" id="nascimento" name="nascimento" maxlength="10"
+            placeholder="dia/mês/ano" onkeyup="maskNascimento(this)" onblur="maskNascimento(this)">
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="nascimento" class="form-label">Data de nascimento</label>
-        <input type="text" class="form-control" id="nascimento" name="nascimento" maxlength="10"
-          placeholder="dia/mês/ano" onkeyup="maskNascimento(this)" onblur="maskNascimento(this)">
-      </div>
-      <button id="cadastrar" class="btn btn-primary" onclick="validar_e_cadastrar()">Cadastrar</button>
-    </form>
+      <button id="cadastrar" class="btn btn-primary cadastrar" onclick="validar_e_cadastrar()">Cadastrar</button>
+    </div>
   </form>
   <script src="js/cadastro.js"></script>
 </body>
