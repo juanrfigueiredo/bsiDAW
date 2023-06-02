@@ -41,57 +41,57 @@
 			<a class="site-logo" href="index.html">
 				<img src="img/favicon/favicon_transparent_32x32.png" alt="" style="height: 200% ; width: 200% ;">
 			</a>
-			<!--Entrar e Registre-se-->
 			<div class="user-panel" style="background-color: #0d253f" ;>
-				<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<span id="loggedUser"></span>
 			</div>
-			<!-- Modal -->
-			<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
-						<div class="modal-body">
-							<ul class="nav nav-pills nav-fill">
-								<li class="nav-item">
-									<div class="nav-link active" data-toggle="tab" style="background-color: #0d253f; color: white;">Entrar
-									</div>
-								</li>
-							</ul>
-							<div class="tab-content mt-3">
-								<div id="Entrar" class="tab-pane fade active show">
-									<form>
-										<div class="mb-3">
-											<label for="username" class="form-label">Usuário</label>
-											<input type="text" class="form-control" id="username" name="username" required>
-										</div>
-										<div class="mb-3">
-											<label for="password" class="form-label">Senha</label>
-											<input type="password" class="form-control" id="password" name="password" required>
-										</div>
-										<button type="submit" class="btn btn-primary">Entrar</button>
-									</form>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<ul class="nav nav-pills nav-fill">
+							<li class="nav-item">
+								<div class="nav-link active" data-toggle="tab" style="background-color: #0d253f; color: white;">Entrar
 								</div>
+							</li>
+						</ul>
+						<div class="tab-content mt-3">
+							<div id="Entrar" class="tab-pane fade active show">
+								<form>
+									<div class="mb-3">
+										<label for="username" class="form-label">Usuário</label>
+										<input type="text" class="form-control" id="username" name="username" required>
+									</div>
+									<div class="mb-3">
+										<label for="password" class="form-label">Senha</label>
+										<input type="password" class="form-control" id="password" name="password" required>
+									</div>
+									<button type="submit" class="btn btn-primary">Entrar</button>
+								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- Modal -->
-			<!-- responsivo -->
-			<div class="nav-switch">
-				<i class="fa fa-bars"></i>
-			</div>
-			<!-- menu -->
-			<nav class="main-menu">
-				<ul>
-					<li><a href="#" id="Registre-se-show" data-toggle="modal" data-target="#myModal"
-							style="color: #1e90ff">Entrar</a></li>
-					<li><a href="cadastro.html" style="color: #1e90ff">Registre-se</a></li>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="games.html">Games</a></li>
-					<li><a href="campeonatos.html">Campeonatos</a></li>
-					<li><a href="inscrever.html">Participe</a></li>
-				</ul>
-			</nav>
+		</div>
+		<!-- Modal -->
+		<!-- responsivo -->
+		<div class="nav-switch">
+			<i class="fa fa-bars"></i>
+		</div>
+		<!-- menu -->
+		<nav class="main-menu">
+			<ul>
+				<li><a href="#" id="Registre-se-show" data-toggle="modal" data-target="#myModal"
+						style="color: #1e90ff">Entrar</a></li>
+				<li><a href="cadastro.html" style="color: #1e90ff">Registre-se</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="games.html">Games</a></li>
+				<li><a href="campeonatos.html">Campeonatos</a></li>
+				<li><a href="inscrever.html">Participe</a></li>
+			</ul>
+		</nav>
 		</div>
 	</header>
 	<!-- Header section end -->
@@ -306,6 +306,7 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.marquee.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/login-register.js"></script>
 
 
 	<!-- load for map -->

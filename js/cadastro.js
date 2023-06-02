@@ -87,6 +87,9 @@ function cadastrar() {
     document.getElementById("CPF").value = "";
     document.getElementById("celular").value = "";
     document.getElementById("nascimento").value = "";
+
+    // vai para a página de index.html
+    window.location.href = "index.html";
 }
 
 

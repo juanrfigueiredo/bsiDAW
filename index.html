@@ -43,7 +43,7 @@
 			</a>
 			<!--Entrar e Registre-se-->
 			<div class="user-panel" style="background-color: #0d253f" ;>
-				<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<span id="loggedUser"></span>
 			</div>
 			<!-- Modal -->
 			<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -67,7 +67,7 @@
 											<label for="password" class="form-label">Senha</label>
 											<input type="password" class="form-control" id="password" name="password" required>
 										</div>
-										<button type="submit" class="btn btn-primary">Entrar</button>
+										<button class="btn btn-primary" onclick="login()">Entrar</button>
 									</form>
 								</div>
 							</div>
@@ -466,6 +466,8 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.marquee.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/login-register.js"></script>
+	<script src="js/login-register.js"></script>
 
 </body>
 
