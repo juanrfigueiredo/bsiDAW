@@ -39,11 +39,12 @@
 		<div class="container">
 			<!-- logo -->
 			<a class="site-logo" href="index.html">
-				<img src="img/logo.png" alt="">
+				<img src="img/favicon/favicon_transparent_32x32.png" alt="" style="height: 200% ; width: 200% ;">
 			</a>
 			<!--Entrar e Registre-se-->
 			<div class="user-panel">
-				<a href="#" id="Registre-se-show" data-toggle="modal" data-target="#myModal">Entrar / Registre-se</a>
+				<a href="#" id="Registre-se-show" data-toggle="modal" data-target="#myModal">Entrar</a>/
+				<a href="cadastro.html">Registre-se</a>
 			</div>
 			<!-- Modal -->
 			<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -52,10 +53,8 @@
 						<div class="modal-body">
 							<ul class="nav nav-pills nav-fill">
 								<li class="nav-item">
-									<a class="nav-link active" data-toggle="tab" href="#Entrar">Entrar</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" data-toggle="tab" href="cadastro.html">Registre-se</a>
+									<div class="nav-link active" data-toggle="tab" style="background-color: #0d253f; color: white;">Entrar
+									</div>
 								</li>
 							</ul>
 							<div class="tab-content mt-3">
@@ -63,40 +62,13 @@
 									<form>
 										<div class="mb-3">
 											<label for="username" class="form-label">Usuário</label>
-											<input type="text" class="form-control" id="username" name="username"
-												required>
+											<input type="text" class="form-control" id="username" name="username" required>
 										</div>
 										<div class="mb-3">
 											<label for="password" class="form-label">Senha</label>
-											<input type="password" class="form-control" id="password" name="password"
-												required>
+											<input type="password" class="form-control" id="password" name="password" required>
 										</div>
 										<button type="submit" class="btn btn-primary">Entrar</button>
-									</form>
-								</div>
-								<div id="register" class="tab-pane fade">
-									<form>
-										<div class="mb-3">
-											<label for="new-username" class="form-label">Novo Usuário</label>
-											<input type="text" class="form-control" id="new-username"
-												name="new-username" required>
-										</div>
-										<div class="mb-3">
-											<label for="new-email" class="form-label">Email</label>
-											<input type="email" class="form-control" id="new-email" name="new-email"
-												required>
-										</div>
-										<div class="mb-3">
-											<label for="new-password" class="form-label">Nova senha</label>
-											<input type="password" class="form-control" id="new-password"
-												name="new-password" required>
-										</div>
-										<div class="mb-3">
-											<label for="repeat-password" class="form-label">Repita sua senha</label>
-											<input type="password" class="form-control" id="repeat-password"
-												name="repeat-password" required>
-										</div>
-										<button type="submit" class="btn btn-primary">Registre-se</button>
 									</form>
 								</div>
 							</div>
@@ -105,17 +77,21 @@
 				</div>
 			</div>
 			<!-- Modal -->
-			<!-- responsive -->
+			<!-- responsivo -->
 			<div class="nav-switch">
 				<i class="fa fa-bars"></i>
 			</div>
-			<!-- site menu -->
+			<!-- menu -->
 			<nav class="main-menu">
 				<ul>
+					<li><a href="#" id="Registre-se-show" data-toggle="modal" data-target="#myModal">Entrar</a></li>
+
+
+					<li></li>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="games.html">Games</a></li>
 					<li><a href="campeonatos.html">Campeonatos</a></li>
-					<li><a href="inscrever.html">Inscreva-se</a></li>
+					<li><a href="inscrever.html">Participe</a></li>
 					<li><a href="contato.html">Contato</a></li>
 				</ul>
 			</nav>
@@ -497,7 +473,7 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="games.html">Games</a></li>
 				<li><a href="campeonatos.html">Campeonatos</a></li>
-				<li><a href="inscrever.html">Inscreva-se</a></li>
+				<li><a href="inscrever.html">Participe</a></li>
 				<li><a href="contato.html">Contato</a></li>
 			</ul>
 			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
