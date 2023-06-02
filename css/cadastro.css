@@ -1,13 +1,17 @@
 .darkmode {
-  background: linear-gradient(to bottom, #0d253f, #252525);
+  background-image: url("https://i0.wp.com/gamehall.com.br/wp-content/uploads/2015/04/League-of-Legends-Wallpaper-Full-HD-Heroes-Team-1920x1080.jpg?ssl=1");
+  background-size: cover;
   color: #ffffff;
 }
 
 .container {
   margin: 1rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
   max-width: 500px;
   display: flex;
   flex-direction: column;
+  background-image: url("https://i.pinimg.com/originals/85/04/30/850430a750fb80c1ebaa5e740fc7cbd6.jpg");
 }
 
 .cadastrar {
