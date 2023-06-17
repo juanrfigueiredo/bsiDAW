@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Game Warrior Template</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Game Warrior Template">
+	<meta name="keywords" content="warrior, game, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon" />
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+
+
+</head>
+
+<body>
+	<header class="header-section">
+		<div class="container">
+			<!-- logo -->
+			<a class="site-logo" href="index.html">
+				<img src="img/favicon/favicon_transparent_32x32.png" alt="" style="height: 200% ; width: 200% ;">
+			</a>
+			<div class="user-panel" style="background-color: #0d253f" ;>
+				<span id="loggedUser"></span>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body">
+						<ul class="nav nav-pills nav-fill">
+							<li class="nav-item">
+								<div class="nav-link active" data-toggle="tab" style="background-color: #0d253f; color: white;">Entrar
+								</div>
+							</li>
+						</ul>
+						<div class="tab-content mt-3">
+							<div id="Entrar" class="tab-pane fade active show">
+								<form>
+									<div class="mb-3">
+										<label for="username" class="form-label">Usuário</label>
+										<input type="text" class="form-control" id="username" name="username" required>
+									</div>
+									<div class="mb-3">
+										<label for="password" class="form-label">Senha</label>
+										<input type="password" class="form-control" id="password" name="password" required>
+									</div>
+									<button type="submit" class="btn btn-primary">Entrar</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<!-- responsivo -->
+		<div class="nav-switch">
+			<i class="fa fa-bars"></i>
+		</div>
+		<!-- menu -->
+		<nav class="main-menu">
+			<ul>
+				<li><a href="#" id="Registre-se-show" data-toggle="modal" data-target="#myModal"
+						style="color: #1e90ff">Entrar</a></li>
+				<li><a href="cadastro.html" style="color: #1e90ff">Registre-se</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="games.html">Games</a></li>
+				<li><a href="campeonatos.html">Campeonatos</a></li>
+				<li><a href="inscrever.html">Participe</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+
+	<section class="tournaments-section spad">
+		<div class="section-title">
+			<h2 class="cata torneios">PRÓXIMOS CAMPEONATOS</h2>
+		</div>
+		<div class="container">
+			<div class="row">
+				<!---->
+				<a href="KabumChallenge.html" class="col-md-6 container-moba">
+					<div class="tournament-item mb-4 mb-lg-0">
+						<div class="cata moba">MOBA</div>
+						<div class="ti-content">
+							<div class="ti-thumb set-bg" data-setbg="img/Campeonatos/kabumchallenge.png"></div>
+							<div class="ti-text">
+								<h4 class="cormoba">KABUM CHALLENGE <em>LOL</em></h4>
+								<ul>
+									<li><span>Inicio:</span> 25 de março de 2023</li>
+									<li><span>Fim:</span> 2 de abril de 2023 </li>
+									<li><span>Participantes:</span> 32 times</li>
+								</ul>
+								<p><span class="cormoba"><strong>Prêmios:</strong></span> <br>1ºlugar: R$1500,00
+									<br>2ºlugar: R$800,00 <br> 3ºlugar: R$500,00
+								</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!---->
+				<!---->
+				<a href="AmateurLeage.html" class="col-md-6 container-fps">
+					<div class="tournament-item">
+						<div class="cata fps">FPS</div>
+						<div class="ti-content">
+							<div class="ti-thumb set-bg" data-setbg="img/Campeonatos/amateurleague.png"></div>
+							<div class="ti-text">
+								<h4 class="corfps">AMATEUR LEAGUE <em>CS-GO</em></h4>
+								<ul>
+									<li><span>Inicio:</span> 26 de março de 2023</li>
+									<li><span>Fim:</span> 1 de abril de 2023</li>
+									<li><span>Participantes:</span> 32 times</li>
+								</ul>
+								<p><span class="corfps"><strong>Prêmios:</strong></span> <br>1ºlugar: R$1200,00
+									<br>2ºlugar: R$850,00 <br> 3ºlugar: R$600,00
+								</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!---->
+			</div>
+			<div class="row margem-top">
+				<!---->
+				<a href="LatamProSeries.html" class="col-md-6 container-battleroyale">
+					<div class="tournament-item mb-4 mb-lg-0">
+						<div class="cata battleroyale">BATTLE-ROYALE</div>
+						<div class="ti-content">
+							<div class="ti-thumb set-bg" data-setbg="img/Campeonatos/latampubg.png"></div>
+							<div class="ti-text">
+								<h4 class="corbattleroyale">LATAM PRO SERIES <em>PUBG</em></h4>
+								<ul>
+									<li><span>Inicio:</span> 25 de março do 2023</li>
+									<li><span>Fim:</span> 9 de abril de 2023</li>
+									<li><span>Participantes:</span> 128 times</li>
+								</ul>
+								<p><span class="corbattleroyale"><strong>Prêmios:</strong></span> <br>1ºlugar: R$5000,00
+									<br>2ºlugar: R$2000,00 <br> 3ºlugar: R$1000,00
+								</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!---->
+				<!---->
+				<a href="DepreLeague.html" class="col-md-6 container-fps">
+					<div class="tournament-item">
+						<div class="cata fps">FPS</div>
+						<div class="ti-content">
+							<div class="ti-thumb set-bg" data-setbg="img/Campeonatos/depreleague.png"></div>
+							<div class="ti-text">
+								<h4 class="corfps">DEPRE LEAGUE <em>CS-GO</em></h4>
+								<ul>
+									<li><span>Inicio:</span> 30 de março de 2023</li>
+									<li><span>Fim:</span> 2 de abril de 2023</li>
+									<li><span>Participantes:</span> 16 times</li>
+								</ul>
+								<p><span class="corfps"><strong>Prêmios:</strong></span> <br>1ºlugar: R$900,00
+									<br>2ºlugar: R$600,00 <br> 3ºlugar: R$300,00
+								</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!---->
+			</div>
+		</div>
+	</section>
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.marquee.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/login-register.js"></script>
+</body>
+
+</html>

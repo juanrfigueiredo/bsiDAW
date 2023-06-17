@@ -1,0 +1,61 @@
+{
+    //INSTALL PRETTIER, INSTALL FIRACODE NERD FONT MONO, INSTALL 
+   "editor.tabSize": 2,
+   "editor.fontSize": 15,
+   "editor.indentSize": 2,
+   "editor.fontLigatures": true,
+   "editor.fontFamily": "Fira Code",
+   "editor.largeFileOptimizations": false,
+   "explorer.autoReveal": true,
+   "explorer.compactFolders": false,
+   "workbench.layoutControl.enabled": false,
+   "workbench.iconTheme": "material-icon-theme",
+   "[prisma]": {
+     "editor.formatOnSave": true
+   },
+   "[typescript]": {
+     "editor.formatOnSave": true
+   },
+   "files.associations": {
+     "*.env.local": "env",
+     "*.env.production": "env",
+     "*.env.development": "env"
+   },
+   "material-icon-theme.activeIconPack": "nest",
+   "material-icon-theme.folders.associations": {
+     "adapters": "contract",
+     "grpc": "pipe",
+     "kube": "kubernetes",
+     "main": "lib",
+     "websockets": "pipe",
+     "implementations": "core",
+     "protos": "pipe",
+     "entities": "class",
+     "kafka": "pipe",
+     "use-cases": "functions",
+     "migrations": "tools",
+     "schemas": "class",
+     "useCases": "functions",
+     "eslint-config": "tools",
+     "typeorm": "database",
+     "_shared": "shared",
+     "mappers": "meta",
+     "fakes": "mock",
+     "modules": "components",
+     "subscribers": "messages",
+     "domain": "class",
+     "protocols": "contract",
+     "infra": "app",
+     "view-models": "views",
+     "presentation": "template",
+     "dtos": "typescript",
+     "http": "container",
+     "providers": "include",
+     "factories": "class",
+     "repositories": "mappings",
+     "globals": "global",
+     "c6": "wakatime"
+   },
+   "editor.inlineSuggest.enabled": true,
+   "typescript.updateImportsOnFileMove.enabled": "always"
+ }

@@ -1,0 +1,115 @@
+<html>
+    <head>
+		<link rel="stylesheet" href="css/kabumChallenge.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/KabumChallenge.js">
+		    /*By André Menegassi (andremenegassi@hotmail.com) */			
+		</script>
+
+    </head>
+    <body >
+		<header class="cabecalho">
+			<img class="cabecalho-imagem" src="img/logoLOL.png" alt="Logo League od Legends">
+			<nav class="cabecalho-menu">
+			  <a class="cabecalho-menu-item" href="index.html">Home</a>
+			  <a class="cabecalho-menu-item" href="games.html">Games</a>
+			  <a class="cabecalho-menu-item" href="campeonatos.html">Campeonatos</a>
+			  <a class="cabecalho-menu-item" href="inscrever.html">Participe</a>
+			  <a class="cabecalho-menu-item" href="contato.html">Contato</a>
+			</nav>
+		</header>
+		<div class="content">
+			<form id="f_Lista" class="form">
+				<h1 class="titulo">Cadastro Kabum Chalenge LOL</h1>
+				<div class="user-details">
+					<div class="input-box">
+						<label for="txt-nomeTime">Nome do time:</label><br>
+						<input type="text" id="txt-nomeTime" placeholder="Digite o nome do time" oninput="validaTime()" class="input"/><br>
+						<p id="time-error" class="erro"></p>
+					</div>
+					
+					<div class="input-box">
+						<label for="txt-nomeJogador">Nome do Jogador:</label><br>
+						<input type="text" id="txt-nomeJogador" placeholder="Nome do jogador" oninput="validaNome()" class="input"/><br>
+						<p id="nome-error" class="erro"></p>
+					</div>
+
+					<div class="input-box">
+						<label for="txt-emailJogador">E-mail:</label><br>
+						<input type="text" id="txt-emailJogador" placeholder="E-mail do jogador" oninput="validaEmail()" class="input"/><br>
+						<p id="email-error" class="erro"></p>
+					</div>
+
+		
+					<div class="input-box">
+						<label for="txt-celular">Celular</label><br>
+						<input type="text" id="txt-celular" placeholder="Celular" onkeyup="mascara('(##)#####-####',this,event)" oninput="validaCelular()" class="input"/><br>
+						<p id="celular-error" class="erro"></p>
+					</div>
+
+		
+					<div class="input-box">
+						<label for="txt-cpf">CPF:</label><br>
+						<input type="text" id="txt-cpf" placeholder="CPF" onkeypress="mCpf(this)" maxlength="14" onblur="validarCPF(this)" class="input"/><br>
+						<p id="cpf-error" class="erro"></p>
+					</div>
+
+		
+					<div class="input-box">
+						<label for="dt-data">Data Nascimento</label><br>
+						<input type="Date" id="dt-data" onchange="validardataDeNascimento(this.value);" class="input"/><br>
+						<p id="data-error" class="erro"></p>
+					</div>
+
+		
+					<div class="input-box">
+						<label for="txt-rua">Rua:</label><br>
+						<input type="text" id="txt-rua" placeholder="Rua" oninput="validaRua()" class="input"/><br>
+						<p id="rua-error" class="erro"></p>
+					</div>
+
+		
+					<div class="input-box">
+						<label for="txt-numero">Número:</label><br>
+						<input type="number" id="txt-numero" placeholder="Numero" oninput="validaNumero()" class="input"/><br>
+						<p id="numero-error" class="erro"></p>
+					</div>
+
+		
+					<div class="input-box">
+						<label for="txt-cep">CEP:</label><br>
+						<input type="text" id="txt-cep"  placeholder="99.999-999"  onkeypress="mCEP(this)" maxlength="10" oninput="validaCep()" class="input"/><br>
+						<p id="cep-error" class="erro"></p>
+					</div>
+
+					<div class="button">
+						<input type="button" id="btn-add" value="Cadastrar" />	
+					</div>
+					
+				</div>
+						
+		  </form>
+		</div>
+
+		<div> 
+			
+			<table id="grid" class="table table-dark table-hover">
+				
+				<thead>
+					<tr>
+						
+						<th><input type="checkbox" id="ckTodos" ></th>
+						<th>Time</th>
+						<th>Jogador</th>
+						<th>Data Nascimento</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="tb-body">
+					
+				</tbody>
+			</table>
+			<input type="button" value="Excluir selecionados" id="btnSelect" class="botao">
+		</div>		
+    </body>
+</html>
