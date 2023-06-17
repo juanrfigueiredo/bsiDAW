@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox</title>
+    <style>
+      * { 
+        font-family: calibri;
+				zoom: 110%;
+			}
+      .darkmode {
+        background-color: #262626;
+        color: #ffffff;
+      }
+      table, th, td {
+        height: 20px;
+        border-color: #ffffff;
+        border: 1px solid;
+      }
+      th, td {
+        text-align: center;
+        vertical-align: middle;
+        min-width: 40px;
+      }
+    </style>
+  </head>
+  <body class="darkmode">
+    <form id="f_Lista">
+			<input type="text" id="txt-texto" hint="Digite um nome"/>
+			<input type="button" id="txt-add" value="+"  onclick="addItem()" />
+			<br />
+			<br />
+			<br />
+			<div>
+				<table id="grid">
+					<thead>
+						<tr>
+							<th><input type="checkbox" id="ckTodos" onchange="checkTodos()"></th>
+							<th>Itens</th>
+							<th>❌</th>
+						</tr>
+					</thead>
+					<tbody id="tb-body">
+						
+					</tbody>
+				</table>
+			</div>		
+			<div>		
+				<input type="button" value="excluir selecionados" onclick="excluirSelecionados()">
+			</div>
+      </form>
+      <script src="codigo.js"></script>
+  </body>
+</html>
